@@ -1,0 +1,27 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  /* background-color: #0B448F; */
+  background-image: linear-gradient(to bottom,#0B448F ,#0B448F,  rgba(255,0,0,0),rgba(255,0,0,0), #ED3F3C);
+  /* background-image: linear-gradient(to bottom right, #ED3F3C, #0B448F,#ED3F3C); */
+  /* background-image: linear-gradient(to bottom right, #0B448F,#ED3F3C,#0B448F); */
+    /* rgb(4, 70, 148); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }
+  
+.studentCard, .parentCard {
+  max-height: 500px;
+}
+.navbar {
+  background-color: #D1D3D4;
+}

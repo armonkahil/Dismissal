@@ -1,0 +1,14 @@
+{
+  "files.exclude": {
+    "dist": true,
+    "node_modules": true,
+    "package-lock.json": true,
+    "client/package-lock.json": true,
+    "client/node_modules": true,
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "editor.formatOnSave": true,
+  "cSpell.ignoreWords": ["tddreact"]
+}
