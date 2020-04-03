@@ -9,8 +9,8 @@
   "proxy": "http://localhost:3001/",
   "main": "server.js",
   "scripts": {
-    "test": "cd client && nyc npm run test -- --coverage &&  nyc report --reporter=lcov | coveralls",
-    "coverage": " cd client && nyc npm run test -- --coverage && nyc report --reporter=text-lcov | coveralls",
+    "test": "cd client && nyc npm run test -- --coverage &&  nyc report --reporter=lcov",
+    "coverage": " cd client && nyc npm run test -- --coverage && nyc report --reporter=text-lcov",
     "pre-commit": "lint-staged",
     "lint:js": "eslint . && prettier --list-different **/*.{js,jsx}",
     "lint:css": "stylelint **/*.css",
