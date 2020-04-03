@@ -11,16 +11,10 @@ cache:
   
 services: mongodb
 before_install:
-  - sleep 5
-  - 'npm install -g npm@latest'
-  - yarn global add nyc
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
-  - GIT_BRANCH=$TRAVIS_PULL_REQUEST_BRANCH
-  - GIT_COMMIT_SHA=$TRAVIS_PULL_REQUEST_SHA
 
-install: npm install
 script:
   - npm run build
   - npm run test 
