@@ -9,7 +9,7 @@ import ParentsContainer from '../parentsContainer'
 import { List } from '../../List'
 import StudentContainer from '../StudentContainer'
 
-const TeacherContainer = (props) => {
+const TeacherContainer = props => {
   // console.log('props:', props)
 
   return (

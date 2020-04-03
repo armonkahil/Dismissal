@@ -1,5 +1,7 @@
 build/
 node_modules/
+client/node_modules/
+client/src/serviceworker.js
 dist/
-setting.json
-scripts/
+settings.json
+.vscode/

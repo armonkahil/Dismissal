@@ -1,9 +1,9 @@
-// const keys = require('../config/keys')
+const keys = require('../config/keys')
 const router = require('express').Router()
 const apiRoutes = require('./api')
 const gravatar = require('gravatar')
 const bcrypt = require('bcryptjs')
-// const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken')
 const passport = require('passport')
 
 // Load Input Validation
@@ -64,7 +64,7 @@ router.post('/register', (req, res) => {
   })
 })
 
-// @route   GET api/users/login
+//  @route   GET api/users/login
 // @desc    Login User / Returning JWT Token
 // @access  Public
 // router.post('/login', (req, res) => {

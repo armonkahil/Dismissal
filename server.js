@@ -3,9 +3,9 @@ const express = require('express')
 const passport = require('passport')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-const routes = require('./routes')
 const morgan = require('morgan')
 const gradient = require('gradient-string')
+const routes = require('./routes')
 
 // Start the API server
 const PORT = process.env.PORT || 3001
@@ -31,18 +31,20 @@ app.use((req, res, next) => {
   next()
 })
 app.use(morgan('dev'))
+
 // DB Config
 const db = require('./config/keys').mongoURI
+
 mongoose.Promise = global.Promise
 mongoose.set('useNewUrlParser', true)
 // mongoose.set('useFindAndModify', false)
 mongoose.set('useCreateIndex', true)
 mongoose
-  .connect(db)
-  .then(() => console.log('MongoDB Connected'))
+.connect(db)
+.then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err))
-
-// Serve up static assets (usually on heroku)
+  
+  // Serve up static assets (usually on heroku)
 // Server static assets if in production
 if (process.env.NODE_ENV === 'production') {
   // Set static folder
@@ -66,12 +68,12 @@ const server = app.listen(PORT, () => {
 // =============================================================================
 // Socket.IO Routes
 // =============================================================================
-const io = require('socket.io')(server)
 
+const io = require('socket.io')(server)
 // This is what the socket.io syntax is like, we will work this later
 io.on('connection', socket => {
   console.log(gradient.vice('\nNew client connected'))
-
+  
   socket.on('admin', data => {
     console.log('\nAdmin Message:', gradient.summer(data.message))
     // socket.emit('im here', data)

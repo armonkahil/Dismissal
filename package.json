@@ -10,10 +10,12 @@
   "main": "server.js",
   "scripts": {
     "test": "cd client && npm run test",
-    "lint:js": "eslint . && prettier-eslint --list-different **/*.js",
+    "pre-commit": "lint-staged",
+    "lint:js": "eslint . && prettier --list-different **/*.{js,jsx}",
+    "lint:css": "stylelint **/*.css",
     "lint:fix": "eslint . --fix",
-    "lint": "eslint . && prettier-eslint --list-different $PWD**/*.js",
-    "format": "prettier-eslint --write \"$PWD{,!(node_modules)/**/}*.{js,jsx}\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "format": "prettier --write **/*.{js,jsx}",
     "db:seed": "node scripts/seedDB.js",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -21,8 +23,7 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
-    "precommit": "lint-staged"
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -56,8 +57,14 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.1",
     "nodemon": "^2.0.2",
+    "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -79,5 +86,16 @@
     "path": "^0.12.7",
     "socket.io": "^2.3.0",
     "validator": "^13.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,css,scss,md}": [
+      "prettier — single-quote — write",
+      "git add"
+    ]
   }
 }

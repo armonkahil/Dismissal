@@ -1,4 +1,7 @@
 { 
+  "plugins": [
+    "react", "react-hooks", "jsx-a11y", "prettier"
+  ],
    "settings": {
     "react": {
       "version": "detect"
@@ -19,7 +22,7 @@
   ],
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2018,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,
@@ -27,9 +30,6 @@
       "experimentalObjectRestSpread": true
     }
   },
-  "plugins": [
-    "react", "react-hooks", "jsx-a11y", "prettier"
-  ],
   "rules": {
     "react/jsx-filename-extension": [1, {
       "extensions": [".js", ".jsx"]

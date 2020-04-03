@@ -1,4 +1,5 @@
 dist/
 build/
 node_modules/
+client/node_modules/
 package.json

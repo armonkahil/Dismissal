@@ -88,7 +88,6 @@ export const deleteAccount = () => dispatch => {
   }
 }
 
-
 // Clear family
 export const clearCurrentFamily = () => {
   return {

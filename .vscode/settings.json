@@ -4,11 +4,14 @@
     "node_modules": true,
     "package-lock.json": true,
     "client/package-lock.json": true,
-    "client/node_modules": true,
+    "client/node_modules": true
   },
   "[javascript]": {
     "editor.tabSize": 2
   },
   "editor.formatOnSave": true,
-  "cSpell.ignoreWords": ["tddreact"]
+  "cSpell.ignoreWords": ["tddreact"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false
 }
