@@ -10,7 +10,7 @@
   "main": "server.js",
   "scripts": {
     "test": "cd client && nyc npm run test",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov",
+    "coverage": "nyc npm test && nyc report --reporter=lcov --reporter=text",
     "pre-commit": "lint-staged",
     "lint:js": "eslint . && prettier --list-different **/*.{js,jsx}",
     "lint:css": "stylelint **/*.css",
