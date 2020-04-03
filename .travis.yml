@@ -6,14 +6,16 @@ cache:
     - client/node_modules
     - packages/react-scripts/node_modules
   
+services: mongodb
 before_install:
+  - sleep 5
+  - 'npm install -g npm@latest'
   - yarn global add nyc
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
 install: npm install
-services: mongodb
 script:
   - npm run build
   - npm test 
