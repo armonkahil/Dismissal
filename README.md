@@ -1,6 +1,8 @@
 # Dismissal [![Build Status](https://travis-ci.com/armonkahil/Dismissal.svg?branch=master)](https://travis-ci.com/armonkahil/Dismissal)
 An open source school dismissal application.
+Deployed to [Heroku](https://dismissed.herokuapp.com/)
 ___
+![Landing Page](client/public/responsiveLanding.jpg)
 The purpose of this project to help solve congestion issues with general school dismissals. 
 
 In an earlier group project, my team and I set out to tackle this very issue. We came up with [Dismissed](https://github.com/margosij/Project-3), a school dismissal manager. However, that previous project didn't completely solve the issue at hand. One goal it did achieve was that it eliminated the need to have teachers outside manually entering in names, the parents did that.
@@ -40,6 +42,7 @@ Unfortunately, it did not solve the congestion issue. So, this will be a complet
   
 
 ## What will be different this time?
+- TDD - **I cannot stress this enough**.
 - Different UI
 - More in-depth components
 - Maybe Chat, or more so one-way communication from teacher to parent.
