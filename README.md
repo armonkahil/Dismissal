@@ -1,4 +1,5 @@
 # Dismissal [![Build Status](https://travis-ci.com/armonkahil/Dismissal.svg?branch=master)](https://travis-ci.com/armonkahil/Dismissal)
+
 An open source school dismissal application.
 Deployed to [Heroku](https://dismissed.herokuapp.com/)
 ___
