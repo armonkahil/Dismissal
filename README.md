@@ -38,7 +38,7 @@ Unfortunately, it did not solve the congestion issue. So, this will be a complet
       - tiresome
       - time-consuming
       - redundant
-      - burns through cell phone.
+      - burns through cell phones
       - Sometimes parents are there to pickup more than one student which causes confusion and even more typing.
   
 
