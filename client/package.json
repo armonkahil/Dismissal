@@ -6,7 +6,7 @@
   "dependencies": {
     "@primer/octicons-react": "^9.6.0",
     "animate.css": "^3.7.2",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
     "classnames": "^2.2.6",
     "jwt-decode": "^2.2.0",
