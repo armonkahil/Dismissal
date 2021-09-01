@@ -80,7 +80,7 @@
     "gravatar": "^1.8.1",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.15",
+    "mongoose": "^6.0.4",
     "mongoose-autopopulate": "^0.12.3",
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
