@@ -79,7 +79,7 @@
     "gradient-string": "^1.2.0",
     "gravatar": "^1.8.1",
     "if-env": "^1.0.4",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.10.15",
     "mongoose-autopopulate": "^0.12.3",
     "morgan": "^1.10.0",
